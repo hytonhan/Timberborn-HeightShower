@@ -1,5 +1,8 @@
 # Timberborn-HeightShower
 This simple mod for Timberborn adds a panel to the top right corner that shows the terrain height from where the cursor is pointing.
+Example picture below:
+
+![Example](https://raw.githubusercontent.com/hytonhan/Timberborn-HeightShower/master/.attachments/Example.PNG?raw=true)
 
 # Changelog
 
