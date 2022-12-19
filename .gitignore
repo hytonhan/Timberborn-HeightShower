@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Hytone.Timberborn.Mods.HeightShower/package/HeightShower/plugins/Hytone.Timberborn.Mods.HeightShower.dll
+/Hytone.Timberborn.Mods.HeightShower/package/README.md
