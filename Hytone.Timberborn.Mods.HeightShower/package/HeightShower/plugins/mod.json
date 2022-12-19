@@ -1,6 +1,6 @@
 {
   "Name": "HeightShower",
-  "Version": "0.0.1",
+  "Version": "1.0.0",
   "UniqueId": "hytone.plugins.heightshower",
   "MinimumApiVersion": "0.5.3",
   "MinimumGameVersion": "0.3.4",
