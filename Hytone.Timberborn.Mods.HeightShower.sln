@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hytone.Timberborn.Mods.HeightShower", "Hytone.Timberborn.Mods.HeightShower\Hytone.Timberborn.Mods.HeightShower.csproj", "{42692B4C-6C5B-4BC7-8C54-A8EB7A781D1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{3A17CA3D-64BE-4736-B502-B455C0691925}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42692B4C-6C5B-4BC7-8C54-A8EB7A781D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42692B4C-6C5B-4BC7-8C54-A8EB7A781D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42692B4C-6C5B-4BC7-8C54-A8EB7A781D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42692B4C-6C5B-4BC7-8C54-A8EB7A781D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D686CFF8-B114-4E2B-AE9A-F5375F98C8FC}
+	EndGlobalSection
+EndGlobal

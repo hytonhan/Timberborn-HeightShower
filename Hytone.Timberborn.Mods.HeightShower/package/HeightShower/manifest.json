@@ -1,0 +1,9 @@
+﻿{
+  "name": "HeightShower",
+  "version_number": "0.0.1",
+  "website_url": "https://github.com/hytonhan/Timberborn-SimpleFloodgateTriggers",
+  "description": "Automated Floodgates and Water pumps on basic events",
+  "dependencies": [
+    "Timberborn_Central-TimberAPI-0.5.3"
+  ]
+}
