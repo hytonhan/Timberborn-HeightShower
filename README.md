@@ -6,5 +6,5 @@ Example picture below:
 
 # Changelog
 
-## v0.1.0 - 19.3.2022
-- First implementation that supports setting of height when Droughts end or start.
+## v1.0.0 - 19.12.2022
+- First implementation that adds a panel that shows current height to the top right corner in-game
