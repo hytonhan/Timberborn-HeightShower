@@ -1,6 +1,6 @@
 ﻿{
   "name": "HeightShower",
-  "version_number": "1.0.0",
+  "version_number": "1.0.1",
   "website_url": "https://github.com/hytonhan/Timberborn-HeightShower",
   "description": "Show height of terrain where cursor is pointing",
   "dependencies": [

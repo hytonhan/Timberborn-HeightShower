@@ -6,5 +6,8 @@ Example picture below:
 
 # Changelog
 
+## v1.0.1 - 23.12.2022
+- Fixed HeightShower crashing the game when loading the map editor
+
 ## v1.0.0 - 19.12.2022
 - First implementation that adds a panel that shows current height to the top right corner in-game

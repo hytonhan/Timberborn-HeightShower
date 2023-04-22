@@ -6,7 +6,7 @@ namespace Hytone.Timberborn.Mods.HeightShower
 {
     public class HeightShowerConfigurator
     {
-        [Configurator(SceneEntrypoint.InGame)]
+        [Configurator(SceneEntrypoint.InGame | SceneEntrypoint.MapEditor)]
         public class ScheduleSystemConfigurator : IConfigurator
         {
             public void Configure(IContainerDefinition containerDefinition)
