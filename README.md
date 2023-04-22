@@ -6,6 +6,9 @@ Example picture below:
 
 # Changelog
 
+## v1.1.0 - 22.4.2023
+- Fixed to work with game v.0.4.1.1
+
 ## v1.0.1 - 23.12.2022
 - Fixed HeightShower crashing the game when loading the map editor
 
