@@ -8,8 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="System.Collections.Immutable" Version="5.0.0" />
-    <PackageReference Include="TimberApi" Version="0.5.3" />
-    <PackageReference Include="TimberApi.Common" Version="0.5.3" />
+    <PackageReference Include="TimberApi" Version="0.5.4.2" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
