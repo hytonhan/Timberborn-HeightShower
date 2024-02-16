@@ -20,28 +20,25 @@ namespace Hytone.Timberborn.Mods.HeightShower
         }
     }
 
-    [HarmonyPatch(typeof(CursorDebugger), nameof(CursorDebugger.GetCoordinates))]
+    [HarmonyPatch(typeof(CursorDebugger), "ProcessInput")]
     public class CursorDebuggerPatch
     {
         private static ILoc _loc;
         private static HeightShowerPanel _heightPanel;
 
-        public static void Postfix(CursorDebugger __instance, Ray ray)
+        public static void Prefix(CursorCoordinatesPicker ____cursorCoordinatesPicker)
         {
+            CursorCoordinates? cursorCoordinates = ____cursorCoordinatesPicker.CursorCoordinates();
             if (_heightPanel == null)
             {
                 _heightPanel = DependencyContainer.GetInstance<HeightShowerPanel>();
             }
-            if(_loc == null)
+            if (_loc == null)
             {
                 _loc = DependencyContainer.GetInstance<ILoc>();
             }
-
-            var result = __instance._terrainPicker.PickTerrainCoordinates(ray);
-            if (result != null)
-            {
-                _heightPanel.HeightLabel.text = $"{_loc.T("HeightShower.Panel.Height")} {result.Value.Coordinates.z + 1}";
-            }
+            CursorCoordinates valueOrDefault = cursorCoordinates.GetValueOrDefault();
+            _heightPanel.HeightLabel.text = $"{_loc.T("HeightShower.Panel.Height")} {valueOrDefault.TileCoordinates.z}"; // is +1 here needed?
         }
     }
 }

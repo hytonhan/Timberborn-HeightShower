@@ -1,5 +1,5 @@
 ﻿using TimberApi.UiBuilderSystem;
-using Timberborn.GameUI;
+using Timberborn.UILayoutSystem;
 using Timberborn.SingletonSystem;
 using UnityEngine.UIElements;
 
@@ -7,7 +7,7 @@ namespace Hytone.Timberborn.Mods.HeightShower
 {
     public class HeightShowerPanel : ILoadableSingleton
     {
-        private readonly GameLayout _gameLayout;
+        private readonly UILayout _gameLayout;
         public Label HeightLabel;
 
 
@@ -17,7 +17,7 @@ namespace Hytone.Timberborn.Mods.HeightShower
         private const int _panelOrder = 8;
 
         public HeightShowerPanel(
-            GameLayout gameLayout, 
+            UILayout gameLayout, 
             UIBuilder uIBuilder)
         {
             _gameLayout = gameLayout;
