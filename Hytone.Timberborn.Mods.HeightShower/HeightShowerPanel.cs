@@ -1,13 +1,18 @@
-﻿using TimberApi.UiBuilderSystem;
-using Timberborn.GameUI;
+﻿using System.Linq;
+using System.Reflection;
+using TimberApi.UIBuilderSystem;
+using TimberApi.UIBuilderSystem.ElementBuilders;
+using TimberApi.UIPresets.Labels;
 using Timberborn.SingletonSystem;
+using Timberborn.UILayoutSystem;
 using UnityEngine.UIElements;
+using UnityEngine;
 
 namespace Hytone.Timberborn.Mods.HeightShower
 {
     public class HeightShowerPanel : ILoadableSingleton
     {
-        private readonly GameLayout _gameLayout;
+        private readonly UILayout _gameLayout;
         public Label HeightLabel;
 
 
@@ -17,7 +22,7 @@ namespace Hytone.Timberborn.Mods.HeightShower
         private const int _panelOrder = 8;
 
         public HeightShowerPanel(
-            GameLayout gameLayout, 
+            UILayout gameLayout, 
             UIBuilder uIBuilder)
         {
             _gameLayout = gameLayout;
@@ -27,22 +32,18 @@ namespace Hytone.Timberborn.Mods.HeightShower
         public void Load()
         {
             _root =
-                _builder.CreateComponentBuilder()
-                        .CreateVisualElement()
+                _builder.Create<VisualElementBuilder>()
+                        .SetName("HeightShowerContainer")
                         .AddClass("top-right-item")
                         .AddClass("square-large--green")
                         .SetFlexDirection(FlexDirection.Row)
                         .SetFlexWrap(Wrap.Wrap)
                         .SetJustifyContent(Justify.Center)
-                        .AddComponent(builder => builder.AddComponent(_builder.CreateComponentBuilder()
-                                                                              .CreateLabel()
-                                                                              .AddClass("text--centered")
-                                                                              .AddClass("text--yellow")
-                                                                              .AddClass("date-panel__text")
-                                                                              .AddClass("game-text-normal")
-                                                                              .SetName("HeightShowerLabel")
-                                                                              .SetLocKey("HeightShower.Panel.Height")
-                                              .Build()))
+                        .AddComponent<LabelBuilder>("HeightShowerLabel",builder => 
+                            builder.AddClass("text--centered")
+                                   .AddClass("text--yellow")
+                                   .AddClass("date-panel__text")
+                                   .AddClass("game-text--normal"))
                         .BuildAndInitialize();
 
             HeightLabel = _root.Q<Label>("HeightShowerLabel");

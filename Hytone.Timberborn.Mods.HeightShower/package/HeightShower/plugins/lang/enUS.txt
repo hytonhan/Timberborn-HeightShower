@@ -1,2 +1,0 @@
-﻿ID,Text,Comment
-HeightShower.Panel.Height,Height: ,Label text of HeightShower panel

@@ -1,8 +1,7 @@
 {
   "Name": "HeightShower",
-  "Version": "1.0.1",
+  "Version": "2.0.1",
   "UniqueId": "hytone.plugins.heightshower",
-  "MinimumApiVersion": "0.5.3",
-  "MinimumGameVersion": "0.3.4",
-  "EntryDll": "Hytone.Timberborn.Mods.HeightShower.dll"
+  "MinimumApiVersion": "0.7.0",
+  "MinimumGameVersion": "0.6.8"
 }
